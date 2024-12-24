@@ -1,4 +1,5 @@
-Version en español [Aqui](#descripción-general-del-proyecto)
+# Guia básica para Green Wizzards
+Versión en español [Aqui.](#descripción-general-del-proyecto)
 # Project Overview
 Welcome to Green Wizards Math Reasoning Step-by-Step! This project aims to enhance advanced models by developing and evaluating complex user prompts. For each pair of skills, generate prompts that integrate the skills in a sophisticated way. Prompts should be challenging enough that [latest models] are unlikely to produce accurate responses. Model outputs will be annotated to identify and correct errors.
 
