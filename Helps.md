@@ -34,9 +34,10 @@ Welcome to Green Wizards Math Reasoning Step-by-Step! This project aims to enhan
     - Skills Check - Does the response AFTER REWRITES utilize both of the skills selected in step 1?
     - First Incorrect Step - What was the first incorrect step with a reasoning error made by the model?
     - Skills Gap - What Skill(s) does the model fail at or not include in the response?
+
 ### Task Specifications
 
-##### Step 1: Write a Prompt (math problem)
+#### Step 1: Write a Prompt (math problem)
 In this step, you will write a math problem for the model to solve. Problems should adhere to the specifications below.
 ##### Specifications list
 1. Math problems **must** lead to an error in reasoning in at least one of the steps in the model’s initial response
@@ -87,6 +88,23 @@ Next, you will solve the math problem and verify the problem satisfies all the c
 Next, you will submit the math problem for the model to solve. If the model answers <ins>correctly</ins>, or only makes calculation errors, submit a different problem. Keep submitting problems **until the model produces an incorrect response**.
 
 <img src="/Imagenes/img1.png" alt="drawing" width="700"/>
+
+IMPORTANT NOTE:
+    - Your task is to create a prompt that results in at least one reasoning error.
+        - If your prompt only produces a calculation error, revise it to introduce a reasoning error before completing the task.
+#### Step 2: Rate the Correctness of Each Step
+
+##### When you identify a mistake in the model's response, follow these steps:
+1. Mark the step as "Incorrect."
+2. Explain the mistake and why it is wrong.
+3. Rewrite the model’s reasoning with a corrected solution.
+4. Select either **Reasoning Error** or **Calculation Error**.
+   
+##### Criteria for Incorrect Labeling:
+- **Incorrect**: A clear mathematical error is present.
+- **Not Incorrect**: Issues like poor LaTeX formatting, valid but inefficient solutions, or suboptimal expressions that are still mathematically correct should not be labeled as incorrect.
+
+When asked to rate if each step is done correctly or incorrectly, you will see 4 possible step labels: Incorrect - LLM is appropriate, Correct - LLM is appropriate, Incorrect - Python is appropriate, Correct - Python is appropriate. We will review more in detail below the two images!
 
 ---
 
