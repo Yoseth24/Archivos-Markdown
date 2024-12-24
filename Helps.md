@@ -1,5 +1,39 @@
 # Project Overview
 
+
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Error categories 3</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=18 align="center">Incorrect Reasoning</td>
+            <td align="center">Common Sense</td>
+            <td>Incorrect Common Sense</td>
+            <td>The model cites some common sense that is incorrect.</td>
+        </tr>
+        <tr>
+            <td rowspan=3 align="center">Logical Reasoning</td>
+            <td>Gaps in logical reasoning steps</td>
+            <td>Model skips certain steps important to the logical flow of the solution. In other words the model response is missing a crucial step that results in a nontrivial logical leap.</td>
+        </tr>
+        <tr>
+            <td>Circular Reasoning</td>
+            <td>The model's conclusion is simply a restatement of the premise, offering no new insight or logical progression.</td>
+        </tr>
+        <tr>
+            <td>Inconsistent Reasoning</td>
+            <td>Providing conflicting or contradictory information within the same response</td>
+        </tr>
+    </tbody>
+</table>
+
 Welcome to Green Wizards Math Reasoning Step-by-Step! This project aims to enhance advanced models by developing and evaluating complex user prompts. For each pair of skills, generate prompts that integrate the skills in a sophisticated way. Prompts should be challenging enough that [latest models] are unlikely to produce accurate responses. Model outputs will be annotated to identify and correct errors.
 
 ## Key Terminology:
@@ -200,7 +234,41 @@ In this final step, you should summarize the task using the checkboxes and short
     - What Skill(s) does the model fail at or not include in the response?
       
 # Apendix
+
 ## Python vs. LLM Guidance (labeling calculation and reasoning errors)
+
+<img src="/Imagenes/img4.png" alt="drawing" width="700"/>
+
+## Reasoning Error Identification Guidelines
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Error categories 3</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=4 align="center">Incorrect Reasoning</td>
+            <td rowspan=2 align="center">Common Sense</td>
+            <td>Incorrect Common Sense</td>
+            <td>The model cites some common sense that is incorrect.</td>
+        </tr>
+        <tr>
+            <td align="center">R3 Text B</td>
+        </tr>
+        <tr>
+            <td rowspan=2 align="center">R2 Text B</td>
+            <td align="center">R3 Text C</td>
+        </tr>
+        <tr>
+            <td align="center">R3 Text D</td>
+        </tr>
+    </tbody>
+</table>
 ---
 
 ## Descripción General del Proyecto
