@@ -1,39 +1,4 @@
 # Project Overview
-
-
-
-<table>
-    <thead>
-        <tr>
-            <th></th>
-            <th></th>
-            <th>Error categories 3</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan=18 align="center">Incorrect Reasoning</td>
-            <td align="center">Common Sense</td>
-            <td>Incorrect Common Sense</td>
-            <td>The model cites some common sense that is incorrect.</td>
-        </tr>
-        <tr>
-            <td rowspan=3 align="center">Logical Reasoning</td>
-            <td>Gaps in logical reasoning steps</td>
-            <td>Model skips certain steps important to the logical flow of the solution. In other words the model response is missing a crucial step that results in a nontrivial logical leap.</td>
-        </tr>
-        <tr>
-            <td>Circular Reasoning</td>
-            <td>The model's conclusion is simply a restatement of the premise, offering no new insight or logical progression.</td>
-        </tr>
-        <tr>
-            <td>Inconsistent Reasoning</td>
-            <td>Providing conflicting or contradictory information within the same response</td>
-        </tr>
-    </tbody>
-</table>
-
 Welcome to Green Wizards Math Reasoning Step-by-Step! This project aims to enhance advanced models by developing and evaluating complex user prompts. For each pair of skills, generate prompts that integrate the skills in a sophisticated way. Prompts should be challenging enough that [latest models] are unlikely to produce accurate responses. Model outputs will be annotated to identify and correct errors.
 
 ## Key Terminology:
@@ -252,23 +217,122 @@ In this final step, you should summarize the task using the checkboxes and short
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4 align="center">Incorrect Reasoning</td>
-            <td rowspan=2 align="center">Common Sense</td>
+            <td rowspan=18 align="center">Incorrect Reasoning</td>
+            <td align="center">Common Sense</td>
             <td>Incorrect Common Sense</td>
             <td>The model cites some common sense that is incorrect.</td>
         </tr>
         <tr>
-            <td align="center">R3 Text B</td>
+            <td rowspan=3 align="center">Logical Reasoning</td>
+            <td>Gaps in logical reasoning steps</td>
+            <td>Model skips certain steps important to the logical flow of the solution. In other words the model response is missing a crucial step that results in a nontrivial logical leap.</td>
         </tr>
         <tr>
-            <td rowspan=2 align="center">R2 Text B</td>
-            <td align="center">R3 Text C</td>
+            <td>Circular Reasoning</td>
+            <td>The model's conclusion is simply a restatement of the premise, offering no new insight or logical progression.</td>
         </tr>
         <tr>
-            <td align="center">R3 Text D</td>
+            <td>Inconsistent Reasoning</td>
+            <td>Providing conflicting or contradictory information within the same response</td>
+        </tr>
+        <tr>
+            <td>Analytical Thinking</td>
+            <td>Analytical Thinking</td>
+            <td>Mistake in decomposing the problem into smaller pieces</td>
+        </tr>
+        <tr>
+            <td>Deductive Reasoning</td>
+            <td>Unsupported generalizations</td>
+            <td>Drawing broad conclusions from insufficient reasoning or insufficient observations.</td>
+        </tr>
+        <tr>
+            <td>Inductive Reasoning</td>
+            <td>Incorrect Assumption</td>
+            <td>Model making an assumption or a general rule that is incorrect, inappropriate or unnecessary.</td>
+        </tr>
+        <tr>
+            <td>Comparative Analysis</td>
+            <td>Faulty Comparison</td>
+            <td>The model makes comparisons to the wrong targets that do not help with the core arguments.</td>
+        </tr>
+        <tr>
+            <td rowspan=2 align="center">Causal Reasoning</td>
+            <td>False Causality</td>
+            <td>The model incorrectly assumes that one event caused another simply because they occurred together. Correlation doesn't always equal causation.</td>
+        </tr>
+        <tr>
+            <td>Weak Causality</td>
+            <td>The model concludes an effect from insufficient or inconclusive or weak causes</td>
+        </tr>
+        <tr>
+           <td>Pattern Recognition</td>
+            <td>Incorrect Pattern</td>
+            <td>The model finds an incorrect pattern or regularity from some given observations</td>
+        </tr>
+        <tr>
+           <td rowspan=2 align="center">Statistical Reasoning</td> 
+            <td>Incorrect Conclusion from Statistics</td>
+            <td>The model uses the statistic tools correctly, but draws the wrong and unsupported conclusion</td>
+        </tr>
+        <tr>
+            <td>Wrong Statistics</td>
+            <td>The model cites the wrong statistic tool for the current problem</td>
+        </tr>
+        <tr>
+            <td>Temporal Reasoning</td>
+            <td>Faulty temporal reasoning</td>
+            <td>The model makes wrong reasoning based on a misunderstanding of time</td>
+        </tr>
+        <tr>
+            <td>Abstract Thinking</td>
+            <td>Incorrect Abstraction</td>
+            <td>Proposing a level of abstraction for solving the problem that is not appropriate or accurate.</td>
+        </tr>
+        <tr>
+            <td rowspan=3 align="center">Incorrect Formula</td>
+            <td>Misstated Formula</td>
+            <td>Correct name of the formula, theorem, lemma etc but wrong form</td>
+        </tr>
+        <tr>
+            <td>Incorrect usage of the formula</td>
+            <td>Correct name and form of the formula, theorem, lemma etc but wrong place to use it</td>
+        </tr>
+        <tr>
+            <td>Wrong corresponding formula</td>
+            <td>Correct form of the formula, theorem, lemma etc but wrong name</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan=5 align="center">Incorrect Calculation</td>
+            <td rowspan=5 align="center">Incorrect Calculation</td>
+            <td>Arithmetic Errors</td>
+            <td>Basic calculation mistakes. Substitution of value errors and term simplification errors.</td>
+        </tr>
+        <tr>
+            <td>Order of Operations errors</td>
+            <td>Incorrect application of PEMDAS/BODMAS, leading to incorrect results.</td>
+        </tr>
+        <tr>
+            <td>Incorrect Rounding</td>
+            <td>Inaccurate rounding</td>
+        </tr>
+        <tr>
+            <td>Incorrect Unit Errors</td>
+            <td>Mishandling units of measurement.</td>
+        </tr>
+        <tr>
+            <td>Incorrect Use of Signs</td>
+            <td>Missing sign/the sign of the expression is flipped.</td>
         </tr>
     </tbody>
 </table>
+
+
 ---
 
 ## Descripción General del Proyecto
@@ -408,3 +472,183 @@ Los diagramas de flujo a continuación muestran cómo pensar qué etiqueta de la
         - **Distribuciones o cálculos que requieren calcular áreas bajo una curva, evaluar una integral o volumen** (ej. cuál es la probabilidad de que una variable normalmente distribuida con media 100 y desviación estándar 15 caiga entre 90 y 120?; o, "cuál es el volumen de esta evolución sólida (3x+1)^0.5 en estos límites …")
         - **Aproximaciones numéricas o evaluación de series** (ej. una aproximación de Monte Carlo, una distribución binomial, aplicando la regla de Simpson o una aproximación de Striling)
 
+### Paso 2a: Escribir una justificación para pasos incorrectos
+En esta parte de la tarea, proporcionará una justificación para cualquier paso que se haya calificado como Incorrecto
+#### Lista de Especificaciones
+1. Las justificaciones deben explicar claramente **por qué el paso es incorrecto**
+2. Las justificaciones deben usar **ortografía y gramática apropiada**
+3. Las justificaciones no requieren LaTeX. Si usa LaTeX, debe seguir la [guía de estilo](https://docs.google.com/document/d/12wirrYekv_ReVy9FcjvUZWBfCSkRcFAhZ_gbM5k3p_A/pub).
+4. Las justificaciones no deben contener "modelo", "IA", "LLM", etc.
+
+## Paso 3: Reescribir Pasos Incorrectos
+### Guías de Reescritura
+- Mantener Integridad Secuencial: Asegurar que su reescritura preserve el orden lógico del razonamiento original e incluya el mismo nivel de detalle.
+- Claridad en la Reescritura: Reescribir el paso de manera clara y concisa, usando lenguaje simple que evite jerga. La reescritura debe ser autocontenida y comprensible, siguiendo una secuencia lógica de razonamiento.
+- Enfocarse en la Resolución de Problemas: Solo incluir información necesaria para resolver el problema. No agregar detalles extraños como definiciones de conceptos básicos.
+  
+### Tipos de Errores
+1. Errores de Cálculo: Errores simples de aritmética u operacionales (ej., multiplicación incorrecta).
+2. Errores de Razonamiento: Errores en la comprensión del proceso o lógica detrás de una solución.
+Para este proyecto, cada respuesta debe incluir al menos un error de razonamiento. Si el único error es un error de cálculo, modifique el prompt para crear un error de razonamiento.
+
+### <ins>**Ejemplos de Errores**</ins>
+**Ejemplo 1: Área de Rectángulo (Error de Razonamiento)**
+- **Problema**: La longitud de un rectángulo se duplica y su ancho aumenta en 3 metros. ¿Cuál es la nueva área?
+- **Respuesta Incorrecta**: Suma las dimensiones en lugar de multiplicarlas.
+    - **Error**: Malentendido de la fórmula para el área.
+**Ejemplo 2: Alquiler de Auto (Error de Cálculo)**
+- **Problema**: ¿Cuánto costará alquilar un auto por 3 días y conducir 150 millas?
+- **Respuesta Incorrecta**: Comprensión correcta, pero calcula mal el costo total.
+    - **Error**: Simple error aritmético.
+  
+## Paso 4: Regenerar
+<ins>Repetir el proceso hasta alcanzar la Respuesta Final</ins>
+- Regenerar la respuesta después de cada corrección, reiniciando la línea de pensamiento del modelo
+- Repetir Pasos 2-4 hasta que el modelo llegue a la respuesta correcta
+
+## Paso 5: Resumir
+En este paso final, debe resumir la tarea usando las casillas de verificación y respuestas cortas, según las siguientes dimensiones:
+- **Precisión**
+    - ¿La respuesta original del modelo (ANTES DE REESCRITURAS) tiene un error?
+- **Seguimiento de Instrucciones**
+    - ¿La respuesta DESPUÉS DE REESCRITURAS sigue todas las instrucciones del prompt?
+- **Verificación de Habilidades**
+    - ¿La respuesta DESPUÉS DE REESCRITURAS utiliza ambas habilidades seleccionadas en el paso 1?
+- **Primer Paso Incorrecto**
+    - ¿Cuál fue el primer paso incorrecto con error de razonamiento hecho por el modelo?
+- **Brecha de Habilidades**
+    - ¿Qué Habilidad(es) falla el modelo o no incluye en la respuesta?
+      
+# Apéndice
+## Guía Python vs. LLM (etiquetando errores de cálculo y razonamiento)
+<img src="/Imagenes/img4.png" alt="drawing" width="700"/>
+
+## Reasoning Error Identification Guidelines
+
+Te ayudo a traducir solo la columna "Description" mientras mantengo el resto del contenido en inglés:
+
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th>Error categories 3</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan=18 align="center">Incorrect Reasoning</td>
+            <td align="center">Common Sense</td>
+            <td>Incorrect Common Sense</td>
+            <td>El modelo cita un sentido común que es incorrecto.</td>
+        </tr>
+        <tr>
+            <td rowspan=3 align="center">Logical Reasoning</td>
+            <td>Gaps in logical reasoning steps</td>
+            <td>El modelo omite ciertos pasos importantes para el flujo lógico de la solución. En otras palabras, la respuesta del modelo carece de un paso crucial que resulta en un salto lógico no trivial.</td>
+        </tr>
+        <tr>
+            <td>Circular Reasoning</td>
+            <td>La conclusión del modelo es simplemente una reformulación de la premisa, sin ofrecer nueva perspectiva o progresión lógica.</td>
+        </tr>
+        <tr>
+            <td>Inconsistent Reasoning</td>
+            <td>Proporcionar información conflictiva o contradictoria dentro de la misma respuesta.</td>
+        </tr>
+        <tr>
+            <td>Analytical Thinking</td>
+            <td>Analytical Thinking</td>
+            <td>Error en descomponer el problema en piezas más pequeñas.</td>
+        </tr>
+        <tr>
+            <td>Deductive Reasoning</td>
+            <td>Unsupported generalizations</td>
+            <td>Sacar conclusiones amplias a partir de razonamientos u observaciones insuficientes.</td>
+        </tr>
+        <tr>
+            <td>Inductive Reasoning</td>
+            <td>Incorrect Assumption</td>
+            <td>El modelo hace una suposición o una regla general que es incorrecta, inapropiada o innecesaria.</td>
+        </tr>
+        <tr>
+            <td>Comparative Analysis</td>
+            <td>Faulty Comparison</td>
+            <td>El modelo hace comparaciones con objetivos erróneos que no ayudan con los argumentos principales.</td>
+        </tr>
+        <tr>
+            <td rowspan=2 align="center">Causal Reasoning</td>
+            <td>False Causality</td>
+            <td>El modelo asume incorrectamente que un evento causó otro simplemente porque ocurrieron juntos. La correlación no siempre equivale a causalidad.</td>
+        </tr>
+        <tr>
+            <td>Weak Causality</td>
+            <td>El modelo concluye un efecto a partir de causas insuficientes, inconclusivas o débiles.</td>
+        </tr>
+        <tr>
+           <td>Pattern Recognition</td>
+            <td>Incorrect Pattern</td>
+            <td>El modelo encuentra un patrón o regularidad incorrecta a partir de algunas observaciones dadas.</td>
+        </tr>
+        <tr>
+           <td rowspan=2 align="center">Statistical Reasoning</td> 
+            <td>Incorrect Conclusion from Statistics</td>
+            <td>El modelo usa las herramientas estadísticas correctamente, pero saca una conclusión incorrecta y sin fundamento.</td>
+        </tr>
+        <tr>
+            <td>Wrong Statistics</td>
+            <td>El modelo cita la herramienta estadística incorrecta para el problema actual.</td>
+        </tr>
+        <tr>
+            <td>Temporal Reasoning</td>
+            <td>Faulty temporal reasoning</td>
+            <td>El modelo hace un razonamiento incorrecto basado en una mala comprensión del tiempo.</td>
+        </tr>
+        <tr>
+            <td>Abstract Thinking</td>
+            <td>Incorrect Abstraction</td>
+            <td>Proponer un nivel de abstracción para resolver el problema que no es apropiado o preciso.</td>
+        </tr>
+        <tr>
+            <td rowspan=3 align="center">Incorrect Formula</td>
+            <td>Misstated Formula</td>
+            <td>Nombre correcto de la fórmula, teorema, lema, etc. pero forma incorrecta.</td>
+        </tr>
+        <tr>
+            <td>Incorrect usage of the formula</td>
+            <td>Nombre y forma correcta de la fórmula, teorema, lema, etc. pero lugar incorrecto para usarlo.</td>
+        </tr>
+        <tr>
+            <td>Wrong corresponding formula</td>
+            <td>Forma correcta de la fórmula, teorema, lema, etc. pero nombre incorrecto.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td rowspan=5 align="center">Incorrect Calculation</td>
+            <td rowspan=5 align="center">Incorrect Calculation</td>
+            <td>Arithmetic Errors</td>
+            <td>Errores básicos de cálculo. Errores de sustitución de valores y errores de simplificación de términos.</td>
+        </tr>
+        <tr>
+            <td>Order of Operations errors</td>
+            <td>Aplicación incorrecta de PEMDAS/BODMAS, llevando a resultados incorrectos.</td>
+        </tr>
+        <tr>
+            <td>Incorrect Rounding</td>
+            <td>Redondeo inexacto.</td>
+        </tr>
+        <tr>
+            <td>Incorrect Unit Errors</td>
+            <td>Mal manejo de unidades de medida.</td>
+        </tr>
+        <tr>
+            <td>Incorrect Use of Signs</td>
+            <td>Signo faltante/el signo de la expresión está invertido.</td>
+        </tr>
+    </tbody>
+</table>
