@@ -86,9 +86,7 @@ Next, you will solve the math problem and verify the problem satisfies all the c
 
 Next, you will submit the math problem for the model to solve. If the model answers <ins>correctly</ins>, or only makes calculation errors, submit a different problem. Keep submitting problems **until the model produces an incorrect response**.
 
-![Imagen 1](/Imagenes/img1.png)
-
-<center><img src="/Imagenes/img1.png" alt="centered image" width="500"/></center>
+<img src="/Imagenes/img1.png" alt="drawing" width="700"/>
 
 ---
 
