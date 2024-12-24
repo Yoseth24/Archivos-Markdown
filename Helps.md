@@ -68,6 +68,24 @@ In this step, you will write a math problem for the model to solve. Problems sho
 9. Math problems must be **sufficiently complex, but not contrived**
     - Problems should be complex enough to stump the model but also not contrived, meaning that the problems should reflect realistic scenarios/ask
 
+
+| Category  | Example | Explanation |
+| ------------- | ------------- | -- |
+|**Good Example** |Given a circle with a radius of r, a square is inscribed inside the circle. Calculate the area of the region outside the square but inside the circle.|This is a good example because it integrates geometry concepts (circle and square) and requires the model to compute areas of both shapes and then find the difference. It challenges the model to perform multiple steps and apply different geometric formulas, making it complex enough to potentially stump the model.|
+|**Bad Example**|What is the area of a rectangle with a length of 5 units and a width of 3 units?|This problem is too simple for the task requirements. It only requires a basic application of the area formula for rectangles ($\text{Area} = \text{length} \times \text{width}$) and does not challenge the model's problem-solving abilities. It lacks complexity and is not suitable for evaluating the model’s capacity to handle more advanced tasks.|
+|**Bad Example**| What is the sum of the first 10 positive integers? Also, find the area of a triangle with a base of 5 units and a height of 7 units.|This problem is unsuitable because it includes two separate math problems in one prompt, which goes against the requirement that a math problem should have only one correct solution. Both problems individually are also too simple.|
+
+10. Math problems **should not** contain any **spelling, grammar, or formatting errors**
+
+**Feel free to find inspiration in this** [Math Problems Bank](https://docs.google.com/spreadsheets/d/1dMXhZEsHycYRSz_7vxgjYGbTWPMSJwtZ6r6IoSE5eXI/edit?gid=0#gid=0)
+
+##### Step 1a: Solve the Math Problem
+Next, you will solve the math problem and verify the problem satisfies all the constraints above.
+
+##### Step 1b: Keep Prompting the Model until it Produces an Incorrect Response
+
+Next, you will submit the math problem for the model to solve. If the model answers <ins>correctly</ins>, or only makes calculation errors, submit a different problem. Keep submitting problems **until the model produces an incorrect response**.
+
 ---
 
 ## Descripción General del Proyecto
