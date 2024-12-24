@@ -1,3 +1,4 @@
+Version en español [Aqui](#descripción-general-del-proyecto)
 # Project Overview
 Welcome to Green Wizards Math Reasoning Step-by-Step! This project aims to enhance advanced models by developing and evaluating complex user prompts. For each pair of skills, generate prompts that integrate the skills in a sophisticated way. Prompts should be challenging enough that [latest models] are unlikely to produce accurate responses. Model outputs will be annotated to identify and correct errors.
 
@@ -335,10 +336,10 @@ In this final step, you should summarize the task using the checkboxes and short
 
 ---
 
-## Descripción General del Proyecto
+# Descripción General del Proyecto
 ¡Bienvenido a Green Wizards Math Reasoning Step-by-Step! Este proyecto busca mejorar modelos avanzados mediante el desarrollo y evaluación de prompts complejos. Para cada par de habilidades, genere prompts que integren las habilidades de manera sofisticada. Los prompts deben ser lo suficientemente desafiantes para que [últimos modelos] tengan pocas probabilidades de producir respuestas precisas. Las salidas del modelo serán anotadas para identificar y corregir errores.
 
-### Terminología Clave:
+## Terminología Clave:
 - **Prompt**: Una pregunta o declaración diseñada para obtener una respuesta del modelo, incorporando dos habilidades complejas.
 - **Respuesta del Modelo**: La respuesta paso a paso del modelo al prompt, utilizada para evaluación.
 - **Anotación**: El proceso de revisar la respuesta del modelo por precisión, relevancia al prompt y uso adecuado de habilidades, mientras se señalan errores de razonamiento.
@@ -346,7 +347,7 @@ In this final step, you should summarize the task using the checkboxes and short
 - **Corrección de Errores**: Corregir errores identificados y proporcionar explicaciones claras para las correcciones.
 - **Material Didáctico**: Si es necesario, desarrollar recursos educativos para explicar y abordar errores de razonamiento.
 
-### Flujo de Trabajo del Intento de Tarea
+# Flujo de Trabajo del Intento de Tarea
 1. **PROMPT** - *Escribir y Resolver un Problema Matemático Elegante*
     - Seleccionar dos Habilidades para incorporar en un prompt (debe usar ambas)
     - Escribir un prompt que pueda confundir al modelo (causando un error de razonamiento)
@@ -369,10 +370,10 @@ In this final step, you should summarize the task using the checkboxes and short
     - Primer Paso Incorrecto - ¿Cuál fue el primer paso incorrecto con error de razonamiento hecho por el modelo?
     - Brecha de Habilidades - ¿Qué Habilidad(es) falla el modelo o no incluye en la respuesta?
 
-### Especificaciones de la Tarea
-##### Paso 1: Escribir un Prompt (problema matemático)
+# Especificaciones de la Tarea
+## Paso 1: Escribir un Prompt (problema matemático)
 En este paso, escribirá un problema matemático para que el modelo resuelva. Los problemas deben cumplir con las especificaciones siguientes.
-##### Lista de especificaciones
+### Lista de especificaciones
 1. Los problemas matemáticos **deben** conducir a un error de razonamiento en al menos uno de los pasos de la respuesta inicial del modelo
 2. Los problemas matemáticos **deben** usar formato LaTeX apropiado para todas las expresiones matemáticas.
 3. Los prompts **deben** ser originales.
@@ -410,10 +411,10 @@ En este paso, escribirá un problema matemático para que el modelo resuelva. Lo
 
 **Siéntase libre de encontrar inspiración en este** [Banco de Problemas Matemáticos](https://docs.google.com/spreadsheets/d/1dMXhZEsHycYRSz_7vxgjYGbTWPMSJwtZ6r6IoSE5eXI/edit?gid=0#gid=0)
 
-#### Paso 1a: Resolver el Problema Matemático
+### Paso 1a: Resolver el Problema Matemático
 A continuación, resolverá el problema matemático y verificará que el problema satisfaga todas las restricciones anteriores.
 
-#### Paso 1b: Seguir Presentando el Problema al Modelo hasta que Produzca una Respuesta Incorrecta
+### Paso 1b: Seguir Presentando el Problema al Modelo hasta que Produzca una Respuesta Incorrecta
 
 A continuación, presentará el problema matemático para que el modelo lo resuelva. Si el modelo responde <ins>correctamente</ins>, o solo comete errores de cálculo, presente un problema diferente. Siga presentando problemas **hasta que el modelo produzca una respuesta incorrecta**.
 
@@ -423,15 +424,15 @@ NOTA IMPORTANTE
     - Su tarea es crear un prompt que resulte en al menos un error de razonamiento.
     - Si su prompt solo produce un error de cálculo, revíselo para introducir un error de razonamiento antes de completar la tarea.
 
-### Paso 2: Calificar la Corrección de Cada Paso
+## Paso 2: Calificar la Corrección de Cada Paso
 
-#### Cuando identifique un error en la respuesta del modelo, siga estos pasos:
+### Cuando identifique un error en la respuesta del modelo, siga estos pasos:
 1. Marque el paso como "Incorrecto."
 2. Explique el error y por qué está mal.
 3. Reescriba el razonamiento del modelo con una solución corregida.
 4. Seleccione **Error de Razonamiento** o **Error de Cálculo**.
    
-#### Criterios para Etiquetado Incorrecto:
+### Criterios para Etiquetado Incorrecto:
 - **Incorrecto**: Hay un error matemático claro presente.
 - **No Incorrecto**: Problemas como formato LaTeX deficiente, soluciones válidas pero ineficientes, o expresiones subóptimas que son matemáticamente correctas no deben etiquetarse como incorrectas.
 
@@ -443,14 +444,14 @@ Los diagramas de flujo a continuación muestran cómo pensar qué etiqueta de la
 
 <img src="/Imagenes/img3.png" alt="drawing" width="700"/>
 
-#### Cada etiqueta de paso está diseñada para abordar dos preguntas:
+### Cada etiqueta de paso está diseñada para abordar dos preguntas:
 1. **¿Las matemáticas en el paso son correctas?**
    - Esto es sencillo: verificar si las operaciones matemáticas realizadas son correctas y la salida del modelo es precisa.
 2. **¿Este paso debería resolverse idealmente usando las capacidades LLM o Python del modelo?**
     - Esta pregunta se relaciona con determinar si un paso debe resolverse usando el modelo de lenguaje grande (LLM) del modelo o sus capacidades Python (ejecución implícita de código, o ICE).
     - Los LLM son más adecuados para tareas que involucran razonamiento, lógica o demostraciones. Python es ideal para cálculos más complejos o tareas numéricas donde la precisión es crucial.
 
-#### Cuándo Usar LLM o Python
+### Cuándo Usar LLM o Python
 - Seleccione LLM es ideal para resolver el problema cuando el paso es similar a:
     - <ins>_Esencialmente cuando el problema matemático requiere concepto abstracto, palabra o reconocimiento de patrones_</ins>
         - **Problemas verbales** que requieren comprensión del lenguaje natural
