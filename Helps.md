@@ -45,11 +45,11 @@ In this step, you will write a math problem for the model to solve. Problems sho
 2. Math problems **must** use proper LaTeX formatting for all mathematical expressions.
 3. Prompts **must** be original.
 4. Math problems must be solvable
-    a. Avoid problems that don't contain the information necessary to solve them
-    b. Avoid problems with impossible scenarios, for example:
-        i. Dividing by zero
-        ii. Asking for the square root of a negative number if the domain is real numbers
-    c. Avoid problems containing terms, concepts, theorems, or lemmas that do not adhere to mathematical rules
+    - Avoid problems that don't contain the information necessary to solve them
+    - Avoid problems with impossible scenarios, for example:
+        - Dividing by zero
+        - Asking for the square root of a negative number if the domain is real numbers
+    - Avoid problems containing terms, concepts, theorems, or lemmas that do not adhere to mathematical rules
 5. Math problems **must** have **only one correct solution**
     + Avoid problems that have many potential answers
     - ⭐️Answers must be either a number or a mathematical expression
@@ -379,11 +379,11 @@ En este paso, escribirá un problema matemático para que el modelo resuelva. Lo
 2. Los problemas matemáticos **deben** usar formato LaTeX apropiado para todas las expresiones matemáticas.
 3. Los prompts **deben** ser originales.
 4. Los problemas matemáticos deben ser resolubles
-    a. Evitar problemas que no contengan la información necesaria para resolverlos
-    b. Evitar problemas con escenarios imposibles, por ejemplo:
-        i. División por cero
-        ii. Pedir la raíz cuadrada de un número negativo si el dominio son números reales
-    c. Evitar problemas que contengan términos, conceptos, teoremas o lemas que no se adhieran a reglas matemáticas
+    - Evitar problemas que no contengan la información necesaria para resolverlos
+    -  Evitar problemas con escenarios imposibles, por ejemplo:
+        - División por cero
+        -  Pedir la raíz cuadrada de un número negativo si el dominio son números reales
+    - Evitar problemas que contengan términos, conceptos, teoremas o lemas que no se adhieran a reglas matemáticas
 5. Los problemas matemáticos **deben** tener **solo una solución correcta**
     + Evitar problemas que tengan múltiples respuestas posibles
     - ⭐️Las respuestas deben ser un número o una expresión matemática
